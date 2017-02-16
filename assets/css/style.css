@@ -30,7 +30,7 @@ footer {
     left: 0px;
     right: 0px;
     bottom: 0px;
-    top: 1000px;
+    top: 800px;
     padding: 20px;
     color: white;
     background-color: #666666;
@@ -177,34 +177,90 @@ input[type=text] {
     background-color: #ffffff;
     position: relative;
     clear: both;
-    top: 150px;
+    top: 143px;
     width: 40%;
-    height: 500px;
+    height: 800px;
     float: left;
     padding-left: 20px;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-right: 20px;
+    padding-bottom: 80px;
     left: 10%;
 }
 
-#portimage {
-    height: 45%;
-    width: 45%;
-    margin:0px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+.portimage {
+    height: 210px;
+    width: 210px;
+    padding-right: 50px;
+    padding-bottom: 50px;
     padding-top: 10px;
-    position: absolute;
 }
 
 #hangman {
     background-color: #4aaaa5;
     color: white;
     position: absolute;
-    bottom: 200px;
     text-align: center;
-    width: 223px;
+    width: 176px;
     padding: 17px;
+    top: 250px;
     font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
 }
 
+#rpg {
+    background-color: #4aaaa5;
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 176px;
+    padding: 17px;
+    top: 250px;
+    left: 284px;
+    font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+}
+
+#trivia {
+    background-color: #4aaaa5;
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 176px;
+    padding: 17px;
+    top: 525px;
+    font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+}
+
+#rpg {
+    background-color: #4aaaa5;
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 176px;
+    padding: 17px;
+    top: 250px;
+    left: 284px;
+    font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+}
+
+#riw {
+    background-color: #4aaaa5;
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 176px;
+    padding: 17px;
+    top: 525px;
+    left: 284px;
+    font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+}
+
+#rps {
+    background-color: #4aaaa5;
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 176px;
+    padding: 17px;
+    top: 800px;
+    font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+}
