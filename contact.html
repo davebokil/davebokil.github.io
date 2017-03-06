@@ -1,67 +1,67 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-us">
 
 <head>
-    <title>Contact Me</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <title>Contact | Dave Bokil</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <!-- Wrapper Div -->
-    <div class="wrapper">
-        <!-- Header -->
-            <div id="leftspace">
-                &nbsp;
-            </div>
-            <div id="name">
-                Dave Bokil
-            </div>
-            <div id="nav">
-                <a style="text-decoration: none;" href="index.html">About</a> &nbsp; &nbsp; | &nbsp; &nbsp;
-                <a style="text-decoration: none;" href="portfolio.html">Portfolio</a> &nbsp; &nbsp; | &nbsp; &nbsp;
-                <a style="text-decoration: none;" href="contact.html">Contact</a>
-            </div>
-        <!-- Contact Form -->
-        <div id="contactdiv">
-            <h1>Contact</h1>
-            <hr>
-            <form action="form.php">
-                Name
-                <br>
-                <input type="text" name="firstname" placeholder="John Smith">
-                <br> Email
-                <br>
-                <input type="text" name="email" placeholder="example@gmail.com">
-                <br> Message
-                <br>
-                <input style="height: 150px;" type="text" name="message" value="">
-                <br>
-                <input class="button" type="submit" value="Submit">
-            </form>
-        </div>
-        <!-- Connect With Me Div -->
-        <div id="connectwithme">
-            <h1>Connect With Me</h1>
-            <hr>
-            <a href="https://github.com/davebokil">
-                <img id="badge" src="assets/images/github.png" alt="Github">
-            </a>
-            <a href="https://www.linkedin.com/in/davebokil">
-                <img id="badge" src="assets/images/in.png" alt="LinkedIn">
-            </a>
-            <a href="http://stackoverflow.com/users/7450830/dave-bokil">
-                <img id="badge" src="assets/images/so.png" alt="Stack Overflow">
-            </a>
-        </div> 
-    </div>
-<footer>&copy; Copyright 2017 Dave Bokil</footer>
 
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Dave Bokil</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
+
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+
+    </section>
+
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
+
+        <a href="https://github.com/davebokil"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/davebokil"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
+        <a href="http://stackoverflow.com/users/7450830/dave-bokil"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy; 2017 Dave Bokil
+    </div>
+  </footer>
 </body>
 
 </html>
-
-
-
-
-    <!-- Footer -->
-

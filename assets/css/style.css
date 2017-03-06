@@ -1,266 +1,377 @@
-/*Universal Attribute Styling*/
-
-a:visited {
-    color: #777777;
-}
-
-a:link {
-    color: #777777;
-}
-
 body {
-    background-color: #cccccc;
-    background-image: url("../images/sayagata.png");
-    font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 18px;
+  color: #777;
+  line-height: 34px;
+  background: url("../images/concrete_seamless.png");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/*general*/
+
+.container {
+  clear: both;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 20px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  color: #4aaaa5;
+  font-weight: 700;
 }
 
 h1 {
-    color: #4aaaa5;
-    font-family: "Georgia", Times, Times New Roman, serif;
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 49px;
+  border-bottom: 3px solid #ddd;
 }
 
-p {
-    color: #777777;
-    font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+h2,
+h3 {
+  font-size: 22px;
 }
+
+
+/*header*/
+
+#masthead {
+  position: fixed;
+  z-index: 99;
+  margin: 0 0 30px;
+  overflow: auto;
+  width: 100%;
+  color: #fff;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+}
+
+#logo {
+  width: 250px;
+  height: 90px;
+  float: left;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  text-align: center;
+  line-height: 90px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  text-decoration: none;
+  background: #4aaaa5;
+}
+
+nav {
+  float: right;
+  margin-top: 25px;
+}
+
+nav a {
+  display: inline-block;
+  margin-left: 15px;
+  padding-left: 15px;
+  color: #999;
+  text-decoration: none;
+  line-height: 18px;
+  border-left: 1px solid #efefef;
+}
+
+nav a:first-child {
+  border-left: 0 none;
+}
+
+
+/*footer*/
 
 footer {
-    position: relative;
-    width: 100%;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    top: 800px;
-    padding: 20px;
-    color: white;
-    background-color: #666666;
-    clear: both;
-    text-align: center;
-    border-top-style: solid;
-    border-top-color: #4aaaa5;
-    font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
-}
-
-.wrapper {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#connectwithme {
-    float: left;
-    position: absolute;
-    background-color: #ffffff;
-    top: 150px;
-    left: 57%;
-    padding-left: 20px;
-    padding-top: 15px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-
-#badge {
-    height: 70px;
-    width:70px;
-    padding: 10px;
-}
-/* Header and Connect Styling Elements*/
-#leftspace {
-    background-color: #ffffff;
-    float: left;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 10%;
-    height: 70px;
-    padding-top: 30px;
-    border-bottom: solid;
-    border-color: #666666;
-}
-
-#name {
-    background-color: #4aaaa5;
-    float: left;
-    position: absolute;
-    top: 0px;
-    left: 10%;
-    width: 20%;
-    height: 70px;
-    color: #fff;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    font-size: 40px;
-    text-align: center;
-    padding-top: 30px;
-    border-bottom: solid;
-    border-color: #666666;
-}
-
-#nav {
-    background-color: #ffffff;
-    float: right;
-    position: absolute;
-    top: 0px;
-    left: 30%;
-    width: 75%;
-    height: 70px;
-    color: #777777;
-    text-align: center;
-    padding-top: 30px;
-    font-family: "Georgia", Times, Times New Roman, serif;
-    border-bottom: solid;
-    border-color: #666666;
+  padding: 30px 0;
+  clear: both;
+  color: #fff;
+  color: #ccc;
+  font-size: 12px;
+  text-align: center;
+  background: #666;
+  border-top: 8px solid #4aaaa5;
 }
 
 
+/*sidebar*/
 
-/*Index Page Styling*/
-#aboutme {
-    background-color: #ffffff;
-    position: absolute;
-    clear: both;
-    top: 150px;
-    width: 40%;
-    float: left;
-    padding-left: 20px;
-    padding-top: 15px;
-    padding-right: 20px;
-    left: 10%;
+.sidebar {
+  padding: 30px;
+  width: 100%;
+  max-width: 270px;
+  float: right;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
 }
 
-#bioimage {
-    width: 250px;
-    height: 250px;
-    padding-top: 10px;
-    padding-right: 10px;
-    float: left;
+h3,
+.sidebar h2 {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  border-bottom: 2px solid #eee;
+}
+
+.social {
+  width: 62px;
+  height: 62px;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.social:last-child {
+  margin-right: 0;
 }
 
 
+/*main*/
 
-/*Contact Page Styling*/
-#contactdiv {
-    background-color: #ffffff;
-    position: absolute;
-    clear: both;
-    top: 150px;
-    width: 40%;
-    float: left;
-    padding-left: 20px;
-    padding-top: 15px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    left: 10%;
-    font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
-    color: #777777;
+#main-container {
+  padding-top: 130px;
 }
 
-input[type=text] {
-    width: 100%;
-    display: inline-block;
-    border: 1px solid #777777;
-    margin: 8px 0;
-    padding: 5px;
-    box-sizing: border-box;
+.main-section {
+  padding: 30px;
+  margin: 0 0 40px 0;
+  width: 100%;
+  max-width: 650px;
+  float: left;
+  background: #fff;
+  border: 1px solid #ddd;
 }
 
-.button {
-    background-color: #4aaaa5;
-    color: white;
-    border:none;
-    padding: 10px 30px 10px 30px;
-    font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
-     font-size: 16px;
-     margin-top: 5px;
+
+/*portfolio page*/
+
+.work {
+  position: relative;
+  width: 274px;
+  overflow: auto;
+  float: left;
+  margin: 20px 0 25px;
 }
 
-/*Portfolio Styling*/
-#portfolio {
-    background-color: #ffffff;
-    position: relative;
-    clear: both;
-    top: 143px;
-    width: 40%;
-    height: 800px;
-    float: left;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 80px;
-    left: 10%;
+.work:nth-child(even) {
+  margin-right: 40px;
 }
 
-.portimage {
-    height: 210px;
-    width: 210px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    padding-top: 10px;
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: .8;
 }
 
-#hangman {
-    background-color: #4aaaa5;
-    color: white;
-    position: absolute;
-    text-align: center;
-    width: 176px;
-    padding: 17px;
-    top: 250px;
-    font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  margin-bottom: 0;
+  padding: 15px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 300;
+  background: #4aaaa5;
+  border-bottom: 0;
 }
 
-#rpg {
-    background-color: #4aaaa5;
-    color: white;
-    position: absolute;
-    text-align: center;
-    width: 176px;
-    padding: 17px;
-    top: 250px;
-    left: 284px;
-    font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+.auth-image {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+  float: left;
 }
 
-#trivia {
-    background-color: #4aaaa5;
-    color: white;
-    position: absolute;
-    text-align: center;
-    width: 176px;
-    padding: 17px;
-    top: 525px;
-    font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+
+/*contact page*/
+
+#contact-form ul {
+  margin-bottom: 20px;
 }
 
-#rpg {
-    background-color: #4aaaa5;
-    color: white;
-    position: absolute;
-    text-align: center;
-    width: 176px;
-    padding: 17px;
-    top: 250px;
-    left: 284px;
-    font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+#contact-form li {
+  margin-bottom: 10px;
 }
 
-#riw {
-    background-color: #4aaaa5;
-    color: white;
-    position: absolute;
-    text-align: center;
-    width: 176px;
-    padding: 17px;
-    top: 525px;
-    left: 284px;
-    font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
 }
 
-#rps {
-    background-color: #4aaaa5;
-    color: white;
-    position: absolute;
-    text-align: center;
-    width: 176px;
-    padding: 17px;
-    top: 800px;
-    font-family: "Arial", "Helvetica Neue", "Helvetica", "sans-serif";
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
+}
+
+/*Media Queries*/
+
+/*Max Screen Width 980px*/
+@media only screen and (max-width: 980px) {
+#logo {
+  margin-left: 100px;
+}
+
+nav {
+margin-right: 100px;
+}
+
+.main-section {
+margin: 0 0 20px 100px;
+max-width: 50%;
+}
+
+.auth-image {
+  width: 100%;
+  }
+
+.sidebar {
+  margin: 0 0 20px 40px;
+  float: left;
+}
+
+.work {
+  position: relative;
+  width: 100%;
+}
+
+.work img {
+  width: 100%;
+}
+
+}
+
+/*Max Screen Width 768px*/
+@media only screen and (max-width: 768px) {
+#logo {
+  margin-left: 20px;
+}
+
+nav {
+margin-right: 20px;
+}
+
+.auth-image {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+  float: left;
+}
+
+.main-section {
+margin: 0 0 0 20px;
+max-width: 95%;
+}
+
+.sidebar {
+  margin: 20px 0 20px 20px;
+  clear: both;
+  float: left;
+  width: 100%;
+  max-width: 95%;
+}
+
+.work {
+  position: relative;
+  width: 47%;
+}
+
+.work img {
+  width: 100%;
+}
+}
+
+/*Max Screen Width 640px*/
+@media only screen and (max-width: 640px) {
+
+#logo {
+  width: 100%;
+  margin-left: 0px;
+  position: static;
+}
+
+.auth-image {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+  float: left;
+}
+
+nav {
+  width: 100%;
+  height: 45px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+nav a {
+padding-left: 60px;
+padding-right: 35px;
+margin-bottom: 20px;
+margin-top: -20px;
+}
+
+.main-section {
+margin: 40px 0 25px 25px;
+width: 90%;
+max-width: 650px;
+float: left;
+}
+
+
+.sidebar {
+  margin: 0px 5px 25px 25px;
+  clear: both;
+  float: left;
+  width: 100%;
+  max-width: 90%;
+}
+
+.work {
+  position: relative;
+  width: 100%;
+}
 }
